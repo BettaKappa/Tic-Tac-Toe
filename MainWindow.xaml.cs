@@ -16,9 +16,6 @@ using System.Windows.Shapes;
 
 namespace Tic_Tac_Toe
 {
-    /// <summary>
-    /// Interaction logic for MainWindow.xaml
-    /// </summary>
     public partial class MainWindow : Window
     {
         private bool isitx = false;
@@ -27,16 +24,10 @@ namespace Tic_Tac_Toe
         {
             InitializeComponent();
 
-            Button[] bt = new Button[9];
-            bt[0] = A1;
-            bt[1] = B1;
-            bt[2] = C1;
-            bt[3] = A2;
-            bt[4] = B2;
-            bt[5] = C2;
-            bt[6] = A3;
-            bt[7] = B3;
-            bt[8] = C3;
+            List<Button> bt = new List<Button>
+            {
+                A1, A2, A3, B1, B2, B3, C1, C2, C3
+            };
 
             foreach (var button in bt)
             {
@@ -49,16 +40,10 @@ namespace Tic_Tac_Toe
 
         private void Start_Click(object sender, RoutedEventArgs e)
         {
-            Button[] bt = new Button[9]; // опять прописываю то же самое, тк пока туплю с передачей из метода в метод баттонов
-            bt[0] = A1;
-            bt[1] = B1;
-            bt[2] = C1;
-            bt[3] = A2;
-            bt[4] = B2;
-            bt[5] = C2;
-            bt[6] = A3;
-            bt[7] = B3;
-            bt[8] = C3;
+            List<Button> bt = new List<Button>  // опять прописываю то же самое, тк пока туплю с передачей из метода в метод баттонов
+            {
+                A1, A2, A3, B1, B2, B3, C1, C2, C3
+            };
 
             foreach (var button in bt)
             {
