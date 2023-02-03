@@ -35,7 +35,6 @@ namespace Tic_Tac_Toe
             }
 
             Start.IsEnabled = true;
-
         }
 
         private void Start_Click(object sender, RoutedEventArgs e)
@@ -121,7 +120,23 @@ namespace Tic_Tac_Toe
         {
             // Ещё есть такая идея для "робота":
             // После каждого хода игрока составляется/обновляется список кнопок с пустым содержимым и оттуда рандомно выбирается одна, в которой робот и совершает ход.
-            // Я хз как это реализовать, а в тупую миллирад ифов прописывать не хочу.
+
+
+            // Тут тоже траблы с передачей bt, потом разберусь (ха-ха)
+
+            List<Button> free = new List<Button>
+            {
+
+            };
+            // foreach (var button in bt)             
+            // {
+            //     if (button.Content == "")
+            //     {
+            //         free.Add(button);
+            //     }
+            // }
         }
+
+
     }
 }
