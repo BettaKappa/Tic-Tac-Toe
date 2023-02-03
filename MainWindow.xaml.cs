@@ -35,6 +35,8 @@ namespace Tic_Tac_Toe
             }
 
             Start.IsEnabled = true;
+
+            
         }
 
         private void Start_Click(object sender, RoutedEventArgs e)
@@ -49,73 +51,155 @@ namespace Tic_Tac_Toe
                 button.Content = "";
                 button.IsEnabled = true;
             }
+            if (isitx)
+            {
+                isitx = false;
+            }
+            else
+            {
+                isitx = true;
+                // Robo();
+            }
         }
 
         private void A1_Click(object sender, RoutedEventArgs e)
         {
-            IsItx();
-            Robo();
+            if (isitx)
+            {
+                ((Button)sender).Content = "X";
+            }
+            else
+            {
+                ((Button)sender).Content = "O";
+            }
+            // IsItx();
+            // Robo();
         }
 
         private void B1_Click(object sender, RoutedEventArgs e)
         {
-            IsItx();
-            Robo();
+            if (isitx)
+            {
+                ((Button)sender).Content = "X";
+            }
+            else
+            {
+                ((Button)sender).Content = "O";
+            }
+            // IsItx();
+            // Robo();
         }
 
-        private void C1_Click(object sender, RoutedEventArgs e)
+
+        private void C1_Click_1(object sender, RoutedEventArgs e)
         {
-            IsItx();
-            Robo();
+            if (isitx)
+            {
+                ((Button)sender).Content = "X";
+            }
+            else
+            {
+                ((Button)sender).Content = "O";
+            }
+            // IsItx();
+            // Robo();
         }
 
-        private void A2_Click(object sender, RoutedEventArgs e)
+        private void A2_Click_1(object sender, RoutedEventArgs e)
         {
-            IsItx();
-            Robo();
+            if (isitx)
+            {
+                ((Button)sender).Content = "X";
+            }
+            else
+            {
+                ((Button)sender).Content = "O";
+            }
+            // IsItx();
+            // Robo();
         }
 
-        private void B2_Click(object sender, RoutedEventArgs e)
+        private void B2_Click_1(object sender, RoutedEventArgs e)
         {
-            IsItx();
-            Robo();
+            if (isitx)
+            {
+                ((Button)sender).Content = "X";
+            }
+            else
+            {
+                ((Button)sender).Content = "O";
+            }
+            // IsItx();
+            // Robo();
         }
 
-        private void C2_Click(object sender, RoutedEventArgs e)
+        private void C2_Click_1(object sender, RoutedEventArgs e)
         {
-            IsItx();
-            Robo();
+            if (isitx)
+            {
+                ((Button)sender).Content = "X";
+            }
+            else
+            {
+                ((Button)sender).Content = "O";
+            }
+            // IsItx();
+            // Robo();
         }
 
-        private void A3_Click(object sender, RoutedEventArgs e)
+        private void A3_Click_1(object sender, RoutedEventArgs e)
         {
-            IsItx();
-            Robo();
+            if (isitx)
+            {
+                ((Button)sender).Content = "X";
+            }
+            else
+            {
+                ((Button)sender).Content = "O";
+            }
+            // IsItx();
+            // Robo();
         }
 
-        private void B3_Click(object sender, RoutedEventArgs e)
+        private void B3_Click_1(object sender, RoutedEventArgs e)
         {
-            IsItx();
-            Robo();
+            if (isitx)
+            {
+                ((Button)sender).Content = "X";
+            }
+            else
+            {
+                ((Button)sender).Content = "O";
+            }
+            // IsItx();
+            //Robo();
         }
 
-        private void C3_Click(object sender, RoutedEventArgs e)
+        private void C3_Click_1(object sender, RoutedEventArgs e)
         {
-            IsItx();
-            Robo();
+            if (isitx)
+            {
+                ((Button)sender).Content = "X";
+            }
+            else
+            {
+                ((Button)sender).Content = "O";
+            }
+            // IsItx();
+            // Robo();
         }
 
-        private static void IsItx()
-        {
-            // if (isitx)
-            // {
-            //     ((Button)sender).Content = "X";
-            // }
-            // else
-            // {
-            //     ((Button)sender).Content = "O";
-            // }
-        }
+        // private void IsItx(object sender, RoutedEventArgs e)
+        // {
+        //     if (isitx)
+        //     {
+        //         ((Button)sender).Content = "X";
+        //     }
+        //     else
+        //     {
+        //         ((Button)sender).Content = "O";
+        //     }
+        // }
 
         private static void Robo()
         {
