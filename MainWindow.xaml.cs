@@ -116,18 +116,18 @@ namespace Tic_Tac_Toe
             //     ((Button)sender).Content = "O";
             // }
         }
+
         private static void Robo()
         {
-            // Ещё есть такая идея для "робота":
             // После каждого хода игрока составляется/обновляется список кнопок с пустым содержимым и оттуда рандомно выбирается одна, в которой робот и совершает ход.
-
-
-            // Тут тоже траблы с передачей bt, потом разберусь (ха-ха)
 
             List<Button> free = new List<Button>
             {
 
             };
+
+            // Тут тоже траблы с передачей bt, потом разберусь (ха-ха)
+
             // foreach (var button in bt)             
             // {
             //     if (button.Content == "")
@@ -135,8 +135,10 @@ namespace Tic_Tac_Toe
             //         free.Add(button);
             //     }
             // }
+
+            Random rnd = new Random();
+            int randIndex = rnd.Next(free.Count);
+            var freeButton = free[randIndex];
         }
-
-
     }
 }
