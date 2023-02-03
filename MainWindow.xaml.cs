@@ -49,7 +49,7 @@ namespace Tic_Tac_Toe
 
         private void Start_Click(object sender, RoutedEventArgs e)
         {
-            Button[] bt = new Button[9];
+            Button[] bt = new Button[9]; // опять прописываю то же самое, тк пока туплю с передачей из метода в метод баттонов
             bt[0] = A1;
             bt[1] = B1;
             bt[2] = C1;
