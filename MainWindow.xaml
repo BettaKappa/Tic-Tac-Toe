@@ -5,20 +5,20 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Tic_Tac_Toe"
         mc:Ignorable="d"
-        Title="MainWindow" Height="430" Width="295">
-    <Grid Margin="0,10,0,13" HorizontalAlignment="Left" Width="290">
+        Title="MainWindow" Height="430" Width="310">
+    <Grid Margin="0,0,0,4" HorizontalAlignment="Center" Width="290" Background="Black">
 
-        <Button x:Name="A1" Content="" HorizontalAlignment="Left" Height="70" Margin="15,65,0,0" VerticalAlignment="Top" Width="70" Click="A1_Click"/>
-        <Button x:Name="B1" Content="" HorizontalAlignment="Left" Height="70" Margin="105,65,0,0" VerticalAlignment="Top" Width="70" Click="B1_Click"/>
-        <Button x:Name="C1" Content="" HorizontalAlignment="Left" Height="70" Margin="195,65,0,0" VerticalAlignment="Top" Width="70" Click="C1_Click_1"/>
-        <Button x:Name="A2" Content="" HorizontalAlignment="Left" Height="70" Margin="15,155,0,0" VerticalAlignment="Top" Width="70" Click="A2_Click_1"/>
-        <Button x:Name="B2" Content="" HorizontalAlignment="Left" Height="70" Margin="105,155,0,0" VerticalAlignment="Top" Width="70" RenderTransformOrigin="0.52,0.543" Click="B2_Click_1"/>
-        <Button x:Name="C2" Content="" HorizontalAlignment="Left" Height="70" Margin="195,155,0,0" VerticalAlignment="Top" Width="70" Click="C2_Click_1"/>
-        <Button x:Name="A3" Content="" HorizontalAlignment="Left" Height="70" Margin="15,245,0,0" VerticalAlignment="Top" Width="70" Click="A3_Click_1"/>
-        <Button x:Name="B3" Content="" HorizontalAlignment="Left" Height="70" Margin="105,245,0,0" VerticalAlignment="Top" Width="70" Click="B3_Click_1"/>
-        <Button x:Name="C3" Content="" HorizontalAlignment="Left" Height="70" Margin="195,245,0,0" VerticalAlignment="Top" Width="70" Click="C3_Click_1"/>
-        <Button x:Name="Start" Content="Start" HorizontalAlignment="Left" Margin="55,338,0,0" VerticalAlignment="Top" Width="170" Height="32" Click="Start_Click"/>
-        <TextBox HorizontalAlignment="Left" Height="19" Margin="55,26,0,0" TextWrapping="Wrap" Text="Tic-Tac-Toe" TextAlignment="Center" VerticalAlignment="Top" Width="170"/>
+        <Button x:Name="A1" Content="" HorizontalAlignment="Left" Height="70" Margin="15,65,0,0" VerticalAlignment="Top" Width="70" FontSize="40" Click="A1_Click"/>
+        <Button x:Name="B1" Content="" HorizontalAlignment="Left" Height="70" Margin="105,65,0,0" VerticalAlignment="Top" Width="70" FontSize="40" Click="B1_Click"/>
+        <Button x:Name="C1" Content="" HorizontalAlignment="Left" Height="70" Margin="195,65,0,0" VerticalAlignment="Top" Width="70" FontSize="40" Click="C1_Click_1"/>
+        <Button x:Name="A2" Content="" HorizontalAlignment="Left" Height="70" Margin="15,155,0,0" VerticalAlignment="Top" Width="70" FontSize="40" Click="A2_Click_1"/>
+        <Button x:Name="B2" Content="" HorizontalAlignment="Left" Height="70" Margin="105,155,0,0" VerticalAlignment="Top" Width="70" FontSize="40" RenderTransformOrigin="0.52,0.543" Click="B2_Click_1"/>
+        <Button x:Name="C2" Content="" HorizontalAlignment="Left" Height="70" Margin="195,155,0,0" VerticalAlignment="Top" Width="70" FontSize="40" Click="C2_Click_1"/>
+        <Button x:Name="A3" Content="" HorizontalAlignment="Left" Height="70" Margin="15,245,0,0" VerticalAlignment="Top" Width="70" FontSize="40" Click="A3_Click_1"/>
+        <Button x:Name="B3" Content="" HorizontalAlignment="Left" Height="70" Margin="105,245,0,0" VerticalAlignment="Top" Width="70" FontSize="40" Click="B3_Click_1"/>
+        <Button x:Name="C3" Content="" HorizontalAlignment="Left" Height="70" Margin="195,245,0,0" VerticalAlignment="Top" Width="70" FontSize="40" Click="C3_Click_1"/>
+        <Button x:Name="Start" Content="Start" HorizontalAlignment="Left" Margin="55,338,0,0" VerticalAlignment="Top" Width="170" Height="32" FontWeight="Bold" Click="Start_Click"/>
+        <TextBox HorizontalAlignment="Left" Height="19" Margin="55,26,0,0" TextWrapping="Wrap" Text="Tic-Tac-Toe" TextAlignment="Center" FontWeight="Bold" VerticalAlignment="Top" Width="170"/>
     </Grid>
 
 </Window>
