@@ -49,7 +49,7 @@ namespace Tic_Tac_Toe
             if (isitx)
             {
                 isitx = false;
-                // Robo();
+                Robo(bt);
             }
             else
             {
@@ -60,56 +60,55 @@ namespace Tic_Tac_Toe
         private void A1_Click(object sender, RoutedEventArgs e)
         {
             ((Button)sender).Content = (isitx) ? "X" : "O";
-            // Robo();
+            // Robo(bt);
         }
 
         private void B1_Click(object sender, RoutedEventArgs e)
         {
             ((Button)sender).Content = (isitx) ? "X" : "O";
-            // Robo();
+            // Robo(bt);
         }
-
 
         private void C1_Click_1(object sender, RoutedEventArgs e)
         {
             ((Button)sender).Content = (isitx) ? "X" : "O";
-            // Robo();
+            // Robo(bt);
         }
 
         private void A2_Click_1(object sender, RoutedEventArgs e)
         {
             ((Button)sender).Content = (isitx) ? "X" : "O";
-            // Robo();
+            // Robobt(bt);
         }
 
         private void B2_Click_1(object sender, RoutedEventArgs e)
         {
             ((Button)sender).Content = (isitx) ? "X" : "O";
-            // Robo();
+            // Robo(bt);
         }
 
         private void C2_Click_1(object sender, RoutedEventArgs e)
         {
             ((Button)sender).Content = (isitx) ? "X" : "O";
-            // Robo();
+            // Robo(bt);
         }
 
         private void A3_Click_1(object sender, RoutedEventArgs e)
         {
             ((Button)sender).Content = (isitx) ? "X" : "O";
-            // Robo();
+            // Robo(bt);
         }
 
         private void B3_Click_1(object sender, RoutedEventArgs e)
         {
             ((Button)sender).Content = (isitx) ? "X" : "O";
-            //Robo();
+            //Robo(bt);
         }
 
         private void C3_Click_1(object sender, RoutedEventArgs e)
         {
             ((Button)sender).Content = (isitx) ? "X" : "O";
-            // Robo();
+            // Robo(bt);
         }
 
         private void Robo(List<Button> bt)
@@ -131,7 +130,6 @@ namespace Tic_Tac_Toe
             Button freeButton = free[randIndex];
 
             ((Button)freeButton).Content = (isitx) ? "O" : "X";
-
         }
     }
 }
