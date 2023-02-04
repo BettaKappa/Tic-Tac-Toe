@@ -48,6 +48,7 @@ public partial class MainWindow : Window
     {
         List<Button> bt = new() { A1, A2, A3, B1, B2, B3, C1, C2, C3 };
         ((Button)sender).Content = (isitx) ? "X" : "O";
+        A1.IsEnabled = false;
         Robo(bt);
     }
 
@@ -55,6 +56,7 @@ public partial class MainWindow : Window
     {
         List<Button> bt = new() { A1, A2, A3, B1, B2, B3, C1, C2, C3 };
         ((Button)sender).Content = (isitx) ? "X" : "O";
+        B1.IsEnabled = false;
         Robo(bt);
     }
 
@@ -62,6 +64,7 @@ public partial class MainWindow : Window
     {
         List<Button> bt = new() { A1, A2, A3, B1, B2, B3, C1, C2, C3 };
         ((Button)sender).Content = (isitx) ? "X" : "O";
+        C1.IsEnabled = false;
         Robo(bt);
     }
 
@@ -69,6 +72,7 @@ public partial class MainWindow : Window
     {
         List<Button> bt = new() { A1, A2, A3, B1, B2, B3, C1, C2, C3 };
         ((Button)sender).Content = (isitx) ? "X" : "O";
+        A2.IsEnabled = false;
         Robo(bt);
     }
 
@@ -76,6 +80,7 @@ public partial class MainWindow : Window
     {
         List<Button> bt = new() { A1, A2, A3, B1, B2, B3, C1, C2, C3 };
         ((Button)sender).Content = (isitx) ? "X" : "O";
+        B2.IsEnabled = false;
         Robo(bt);
     }
 
@@ -83,6 +88,7 @@ public partial class MainWindow : Window
     {
         List<Button> bt = new() { A1, A2, A3, B1, B2, B3, C1, C2, C3 };
         ((Button)sender).Content = (isitx) ? "X" : "O";
+        C2.IsEnabled = false;
         Robo(bt);
     }
 
@@ -90,6 +96,7 @@ public partial class MainWindow : Window
     {
         List<Button> bt = new() { A1, A2, A3, B1, B2, B3, C1, C2, C3 };
         ((Button)sender).Content = (isitx) ? "X" : "O";
+        A3.IsEnabled = false;
         Robo(bt);
     }
 
@@ -97,6 +104,7 @@ public partial class MainWindow : Window
     {
         List<Button> bt = new() { A1, A2, A3, B1, B2, B3, C1, C2, C3 };
         ((Button)sender).Content = (isitx) ? "X" : "O";
+        B3.IsEnabled = false;
         Robo(bt);
     }
 
@@ -104,6 +112,7 @@ public partial class MainWindow : Window
     {
         List<Button> bt = new() { A1, A2, A3, B1, B2, B3, C1, C2, C3 };
         ((Button)sender).Content = (isitx) ? "X" : "O";
+        C3.IsEnabled = false;
         Robo(bt);
     }
 
@@ -126,6 +135,7 @@ public partial class MainWindow : Window
             Button freeButton = free[randIndex];
 
             ((Button)freeButton).Content = (isitx) ? "O" : "X";
+            freeButton.IsEnabled = false;
         }
     }
 }
