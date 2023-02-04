@@ -1,20 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Formats.Asn1;
-using System.Linq;
-using System.Reflection;
-using System.Runtime.Intrinsics.X86;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 
 namespace Tic_Tac_Toe
 {
@@ -59,69 +46,74 @@ namespace Tic_Tac_Toe
 
         private void A1_Click(object sender, RoutedEventArgs e)
         {
+            List<Button> bt = new() { A1, A2, A3, B1, B2, B3, C1, C2, C3 };
             ((Button)sender).Content = (isitx) ? "X" : "O";
-            // Robo(bt);
+            Robo(bt);
         }
 
         private void B1_Click(object sender, RoutedEventArgs e)
         {
+            List<Button> bt = new() { A1, A2, A3, B1, B2, B3, C1, C2, C3 };
             ((Button)sender).Content = (isitx) ? "X" : "O";
-            // Robo(bt);
+            Robo(bt);
         }
 
         private void C1_Click_1(object sender, RoutedEventArgs e)
         {
+            List<Button> bt = new() { A1, A2, A3, B1, B2, B3, C1, C2, C3 };
             ((Button)sender).Content = (isitx) ? "X" : "O";
-            // Robo(bt);
+            Robo(bt);
         }
 
         private void A2_Click_1(object sender, RoutedEventArgs e)
         {
+            List<Button> bt = new() { A1, A2, A3, B1, B2, B3, C1, C2, C3 };
             ((Button)sender).Content = (isitx) ? "X" : "O";
-            // Robobt(bt);
+            Robo(bt);
         }
 
         private void B2_Click_1(object sender, RoutedEventArgs e)
         {
+            List<Button> bt = new() { A1, A2, A3, B1, B2, B3, C1, C2, C3 };
             ((Button)sender).Content = (isitx) ? "X" : "O";
-            // Robo(bt);
+            Robo(bt);
         }
 
         private void C2_Click_1(object sender, RoutedEventArgs e)
         {
+            List<Button> bt = new() { A1, A2, A3, B1, B2, B3, C1, C2, C3 };
             ((Button)sender).Content = (isitx) ? "X" : "O";
-            // Robo(bt);
+            Robo(bt);
         }
 
         private void A3_Click_1(object sender, RoutedEventArgs e)
         {
+            List<Button> bt = new() { A1, A2, A3, B1, B2, B3, C1, C2, C3 };
             ((Button)sender).Content = (isitx) ? "X" : "O";
-            // Robo(bt);
+            Robo(bt);
         }
 
         private void B3_Click_1(object sender, RoutedEventArgs e)
         {
+            List<Button> bt = new() { A1, A2, A3, B1, B2, B3, C1, C2, C3 };
             ((Button)sender).Content = (isitx) ? "X" : "O";
-            //Robo(bt);
+            Robo(bt);
         }
 
         private void C3_Click_1(object sender, RoutedEventArgs e)
         {
+            List<Button> bt = new() { A1, A2, A3, B1, B2, B3, C1, C2, C3 };
             ((Button)sender).Content = (isitx) ? "X" : "O";
-            // Robo(bt);
+            Robo(bt);
         }
 
         private void Robo(List<Button> bt)
         {
-            // После каждого хода игрока составляется/обновляется список кнопок с пустым содержимым и оттуда рандомно выбирается одна, в которой робот и совершает ход.
-            // Однако я не могу взывть этот меод в кнопках, так как у меня не получается передать в них лист bt
-            // Если я прописываю в скобках List<Button> bt, то возникает ошибка в фале xaml.
-            
             List<Button> free = new List<Button> {};
 
             foreach (var button in bt)             
             {
-                if (button.Content == "")
+                if (button is { Content: "" })
                 {
                     free.Add(button);
                 }
