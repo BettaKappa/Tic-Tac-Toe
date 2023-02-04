@@ -125,11 +125,14 @@ namespace Tic_Tac_Toe
                 }
             }
 
-            Random rnd = new Random();
-            int randIndex = rnd.Next(free.Count);
-            Button freeButton = free[randIndex];
+            if (free.Count != 0)
+            {
+                Random rnd = new Random();
+                int randIndex = rnd.Next(free.Count);
+                Button freeButton = free[randIndex];
 
-            ((Button)freeButton).Content = (isitx) ? "O" : "X";
+                ((Button)freeButton).Content = (isitx) ? "O" : "X";
+            }
         }
     }
 }
