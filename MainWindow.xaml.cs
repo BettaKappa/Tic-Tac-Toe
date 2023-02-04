@@ -36,8 +36,10 @@ namespace Tic_Tac_Toe
             Start.IsEnabled = true;
         }
 
-        private void Start_Click(object sender, RoutedEventArgs e, List<Button> bt)
+        private void Start_Click(object sender, RoutedEventArgs e)
         {
+            List<Button> bt = new() { A1, A2, A3, B1, B2, B3, C1, C2, C3 };
+
             foreach (var button in bt)
             {
                 button.Content = "";
@@ -110,7 +112,7 @@ namespace Tic_Tac_Toe
             // Robo();
         }
 
-        private static void Robo(List<Button> bt)
+        /*private static void Robo(List<Button> bt)
         {
             // После каждого хода игрока составляется/обновляется список кнопок с пустым содержимым и оттуда рандомно выбирается одна, в которой робот и совершает ход.
 
@@ -126,7 +128,7 @@ namespace Tic_Tac_Toe
 
             Random rnd = new Random();
             int randIndex = rnd.Next(free.Count);
-            var freeButton = free[randIndex];
-        }
+            Button freeButton = free[randIndex];
+        }*/
     }
 }
