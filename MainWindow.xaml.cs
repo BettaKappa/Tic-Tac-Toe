@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Formats.Asn1;
 using System.Linq;
 using System.Reflection;
+using System.Runtime.Intrinsics.X86;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -24,10 +26,7 @@ namespace Tic_Tac_Toe
         {
             InitializeComponent();
 
-            List<Button> bt = new List<Button>
-            {
-                A1, A2, A3, B1, B2, B3, C1, C2, C3
-            };
+            List<Button> bt = new () { A1, A2, A3, B1, B2, B3, C1, C2, C3 };
 
             foreach (var button in bt)
             {
@@ -35,190 +34,95 @@ namespace Tic_Tac_Toe
             }
 
             Start.IsEnabled = true;
-
-            
         }
 
-        private void Start_Click(object sender, RoutedEventArgs e)
+        private void Start_Click(object sender, RoutedEventArgs e, List<Button> bt)
         {
-            List<Button> bt = new List<Button>  // опять прописываю то же самое, тк пока туплю с передачей из метода в метод баттонов
-            {
-                A1, A2, A3, B1, B2, B3, C1, C2, C3
-            };
-
             foreach (var button in bt)
             {
                 button.Content = "";
                 button.IsEnabled = true;
             }
+
             if (isitx)
             {
                 isitx = false;
+                // Robo();
             }
             else
             {
                 isitx = true;
-                // Robo();
             }
         }
 
         private void A1_Click(object sender, RoutedEventArgs e)
         {
-            if (isitx)
-            {
-                ((Button)sender).Content = "X";
-            }
-            else
-            {
-                ((Button)sender).Content = "O";
-            }
-            // IsItx();
+            ((Button)sender).Content = (isitx) ? "X" : "O";
             // Robo();
         }
 
         private void B1_Click(object sender, RoutedEventArgs e)
         {
-            if (isitx)
-            {
-                ((Button)sender).Content = "X";
-            }
-            else
-            {
-                ((Button)sender).Content = "O";
-            }
-            // IsItx();
+            ((Button)sender).Content = (isitx) ? "X" : "O";
             // Robo();
         }
 
 
         private void C1_Click_1(object sender, RoutedEventArgs e)
         {
-            if (isitx)
-            {
-                ((Button)sender).Content = "X";
-            }
-            else
-            {
-                ((Button)sender).Content = "O";
-            }
-            // IsItx();
+            ((Button)sender).Content = (isitx) ? "X" : "O";
             // Robo();
         }
 
         private void A2_Click_1(object sender, RoutedEventArgs e)
         {
-            if (isitx)
-            {
-                ((Button)sender).Content = "X";
-            }
-            else
-            {
-                ((Button)sender).Content = "O";
-            }
-            // IsItx();
+            ((Button)sender).Content = (isitx) ? "X" : "O";
             // Robo();
         }
 
         private void B2_Click_1(object sender, RoutedEventArgs e)
         {
-            if (isitx)
-            {
-                ((Button)sender).Content = "X";
-            }
-            else
-            {
-                ((Button)sender).Content = "O";
-            }
-            // IsItx();
+            ((Button)sender).Content = (isitx) ? "X" : "O";
             // Robo();
         }
 
         private void C2_Click_1(object sender, RoutedEventArgs e)
         {
-            if (isitx)
-            {
-                ((Button)sender).Content = "X";
-            }
-            else
-            {
-                ((Button)sender).Content = "O";
-            }
-            // IsItx();
+            ((Button)sender).Content = (isitx) ? "X" : "O";
             // Robo();
         }
 
         private void A3_Click_1(object sender, RoutedEventArgs e)
         {
-            if (isitx)
-            {
-                ((Button)sender).Content = "X";
-            }
-            else
-            {
-                ((Button)sender).Content = "O";
-            }
-            // IsItx();
+            ((Button)sender).Content = (isitx) ? "X" : "O";
             // Robo();
         }
 
         private void B3_Click_1(object sender, RoutedEventArgs e)
         {
-            if (isitx)
-            {
-                ((Button)sender).Content = "X";
-            }
-            else
-            {
-                ((Button)sender).Content = "O";
-            }
-            // IsItx();
+            ((Button)sender).Content = (isitx) ? "X" : "O";
             //Robo();
         }
 
         private void C3_Click_1(object sender, RoutedEventArgs e)
         {
-            if (isitx)
-            {
-                ((Button)sender).Content = "X";
-            }
-            else
-            {
-                ((Button)sender).Content = "O";
-            }
-            // IsItx();
+            ((Button)sender).Content = (isitx) ? "X" : "O";
             // Robo();
         }
 
-        // private void IsItx(object sender, RoutedEventArgs e)
-        // {
-        //     if (isitx)
-        //     {
-        //         ((Button)sender).Content = "X";
-        //     }
-        //     else
-        //     {
-        //         ((Button)sender).Content = "O";
-        //     }
-        // }
-
-        private static void Robo()
+        private static void Robo(List<Button> bt)
         {
             // После каждого хода игрока составляется/обновляется список кнопок с пустым содержимым и оттуда рандомно выбирается одна, в которой робот и совершает ход.
 
-            List<Button> free = new List<Button>
+            List<Button> free = new List<Button> {};
+
+            foreach (var button in bt)             
             {
-
-            };
-
-            // Тут тоже траблы с передачей bt, потом разберусь (ха-ха)
-
-            // foreach (var button in bt)             
-            // {
-            //     if (button.Content == "")
-            //     {
-            //         free.Add(button);
-            //     }
-            // }
+                if (button.Content == "")
+                {
+                    free.Add(button);
+                }
+            }
 
             Random rnd = new Random();
             int randIndex = rnd.Next(free.Count);
