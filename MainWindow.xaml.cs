@@ -45,7 +45,7 @@ namespace Tic_Tac_Toe
                 button.Content = "";
                 button.IsEnabled = true;
             }
-
+            
             if (isitx)
             {
                 isitx = false;
@@ -112,7 +112,7 @@ namespace Tic_Tac_Toe
             // Robo();
         }
 
-        /*private static void Robo(List<Button> bt)
+        private void Robo(List<Button> bt)
         {
             // После каждого хода игрока составляется/обновляется список кнопок с пустым содержимым и оттуда рандомно выбирается одна, в которой робот и совершает ход.
 
@@ -129,6 +129,9 @@ namespace Tic_Tac_Toe
             Random rnd = new Random();
             int randIndex = rnd.Next(free.Count);
             Button freeButton = free[randIndex];
-        }*/
+
+            ((Button)freeButton).Content = (isitx) ? "O" : "X";
+
+        }
     }
 }
